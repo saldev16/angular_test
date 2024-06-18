@@ -1,0 +1,35 @@
+<div class="mx-5 py-4">
+    <div class="row">
+        <div class="col-md-3">
+            <app-analytics-card title="Tasks" [value]="120" iconClass="bi bi-clipboard-minus" mainClass="border-info"
+                extraClass="bg-info"></app-analytics-card>
+        </div>
+        <div class="col-md-3">
+            <app-analytics-card title="Stores" [value]="90" iconClass="bi bi-buildings" mainClass="border-success"
+                extraClass="bg-success"></app-analytics-card>
+        </div>
+        <div class="col-md-3">
+            <app-analytics-card title="Users" [value]="600" iconClass="bi bi-people" mainClass="border-danger"
+                extraClass="bg-danger"></app-analytics-card>
+        </div>
+        <div class="col-md-3">
+            <app-analytics-card title="Services" [value]="15" iconClass="bi bi-gear" mainClass="border-warning"
+                extraClass="bg-warning"></app-analytics-card>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Common Table -->
+            <app-table [tableHeaders]="tableHeaders" [tableData]="tableData">
+                <p>
+                    All Ongoing Tasks
+                </p>
+            </app-table>
+        </div>
+        <div class="col-md-6">
+
+            <app-line-chart></app-line-chart>
+        </div>
+    </div>
+</div>

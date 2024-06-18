@@ -1,0 +1,17 @@
+<div class="card rounded-4">
+    <div class="card-body">
+        <ng-content></ng-content>
+        <table class="table mt-3 table-bordered table-light">
+            <thead>
+                <tr>
+                    <th *ngFor="let item of tableHeaders" scope="col">{{ item.header }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let row of tableData; let i = index">
+                    <td *ngFor="let item of tableHeaders">{{ row[item.key] }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

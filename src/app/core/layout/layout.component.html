@@ -1,0 +1,12 @@
+<div class="wrapper d-flex align-items-stretch">
+
+    <!-- Sidenav -->
+    <app-side-nav [isSideNavOpen]="openSideNav"></app-side-nav>
+    <section class="content">
+        <!-- Topbar -->
+        <app-topbar (emitOpenSideMenu)="toggleSideNav($event)"></app-topbar>
+
+        <!-- Content -->
+        <router-outlet></router-outlet>
+    </section>
+</div>

@@ -1,0 +1,35 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.bg-info {
+    background-color: #87b2e4 !important;
+}
+
+.bg-success {
+    background-color: #6fc6a6 !important;
+}
+
+.bg-danger {
+    background-color: #eb8eaf !important;
+}
+
+.bg-warning {
+    background-color: #f1b33b !important;
+}
+
+.border-info {
+    border-color: #87b2e4 !important;
+}
+
+.border-success {
+    border-color: #6fc6a6 !important;
+}
+
+.border-danger {
+    border-color: #eb8eaf !important;
+}
+
+.border-warning {
+    border-color: #f1b33b !important;
+}

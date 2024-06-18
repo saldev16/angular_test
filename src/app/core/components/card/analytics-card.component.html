@@ -1,0 +1,13 @@
+<div [class]="'card mb-3 rounded-4 ' + mainClass">
+    <div class="row g-0">
+        <div class="col-md-4 d-flex justify-content-center align-items-center icon">
+            <i [class]="iconClass"></i>
+        </div>
+        <div [class]="'col-md-8 d-flex align-items-center rounded-end-4 ' + extraClass">
+            <div class="card-body text-center py-auto">
+                <h5 class="card-title text-white fs-3 fw-light">{{title}}</h5>
+                <h2 class="text-white cs-nm">{{value}}</h2>
+            </div>
+        </div>
+    </div>
+</div>
